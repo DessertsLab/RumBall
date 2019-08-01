@@ -1,2 +1,6 @@
 # RumBall
-financial time series lib
+
+returns
+-------
+
+### MultiPeriodsSimpleReturns
