@@ -70,4 +70,8 @@ func main() {
 	fmt.Println(r4)
 	r5 := PriceMultiPeriodSimpleReturn(TimeSeries{1, []float64{100, 120}})
 	fmt.Println(r5)
+	r6 := PriceMultiPeriodSimpleReturn(TimeSeries{2, []float64{100, 50, 300}})
+	fmt.Println(r6)
+	r7 := PMPSR2(TimeSeries{2, []float64{100, 50, 300}})
+	fmt.Println(r7)
 }

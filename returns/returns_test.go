@@ -16,8 +16,9 @@ func TestPriceMultiPeriodSimpleReturn(t *testing.T) {
 		want float64
 	}{
 		// TODO: Add test cases.
-		{"case1", args{TimeSeries{6, []float64{100, 120, 98, 130, 140, 190, 200}}}, 0.104089513673814},
+		{"case1", args{TimeSeries{6, []float64{100, 120, 98, 130, 140, 190, 200}}}, 0.122462048},
 		{"case2", args{TimeSeries{1, []float64{100, 120}}}, 0.2},
+		{"case3", args{TimeSeries{2, []float64{100, 50, 300}}}, 0.7320508},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
